@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- default stylesheet for all pages -->
+        <link href = "./css/default.css" rel="stylesheet" />
+
+        <title>Sign up</title>
+    </head>
+    <body>
+        <div class = "body-wrapper">
+        <!-- Include the navigation -->
+        <div class="navbar-unlogged">
+        </div>
+   
+    <!-- Navigation ends here -->
+
+
+        <!-- Register starts here -->
+        <div class = "wide-top-margin-container form-wrapper form-container-padding">
+            <form class="form">
+                <div class="form-header">
+                    REGISTER
+                </div>
+                <div class="form-input-wrapper">
+                    <input type="text" name = "user-first-name" placeholder="First Name" />
+                </div>
+                <div class="form-input-wrapper">
+                    <input type="text" name = "user-last-name" placeholder="Last Name" />
+                </div>
+                <div class="form-input-wrapper">
+                    <input type="text" name = "user-other-name" placeholder="Other Name" />
+                </div>
+                <div class="form-input-wrapper">
+                    <input type="email" name = "user-email" placeholder="Email" />
+                </div>
+                <div class="form-input-wrapper">
+                    <input type="password" name = "user-password" placeholder="Password" />
+                </div>
+                <div class="radio-container">
+                    <div class="radio-header">Upload your image</div>   
+                    </div>
+                    <div class="radio-container">
+                        <input type="file" name = "user-passport" id="uploadImage">
+                    </div>
+                <div class="radio-container">
+                    <span class = "radio-header">Registration type</span> 
+                </div>
+                <div class="radio-container">
+                    <label><input type="radio" name = "user-type" checked />User</label>
+                </div>
+                
+                <div class="radio-container">
+                    <label><input type="radio" name = "user-type" />Admin</label>
+                </div>
+                <div class="radio-container">
+                    <label><input type="radio" name = "user-type" />Politician</label>
+                </div>
+
+                <div class="form-input-wrapper">
+                    <button class = "unstyled-btn btn-submit">Register</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Register ends here -->
+
+
+        <!-- Default script file for all pages -->
+        <div class="push"></div>
+        </div>
+        <footer class = "footer form-wrapper">
+
+        </footer>
+        <script src = "./js/default.js"></script>
+    </body>
+</html>
