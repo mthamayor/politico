@@ -47,6 +47,13 @@
         padding: 50px 25px;   
         border-bottom: none;
     }
+
+    .menu-close{
+        display: none;
+    }
+    .side-nav{
+        min-height: fit-content;
+    }
     
 
     
