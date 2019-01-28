@@ -5,8 +5,11 @@ module.exports = {
             "error",
             "windows"
         ],
-        
-        
-    }
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "jasmine": true
+  },
     
 };
