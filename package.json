@@ -1,0 +1,36 @@
+{
+  "name": "politico",
+  "version": "1.0.0",
+  "description": "An andela project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js --exec babel-node --",
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthamayor/politico.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mthamayor/politico/issues"
+  },
+  "homepage": "https://github.com/mthamayor/politico#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.15.0",
+    "jasmine": "^3.3.1",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
