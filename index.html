@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
 
     <!-- default stylesheet for all pages -->
     <link href="./css/default.css" rel="stylesheet">
@@ -13,14 +14,64 @@
 </head>
 
 <body>
-    <div class = "body-wrapper">
-    <div class="top-section form-wrapper">
-        <div>
-            <h1>Welcome to Politico</h1>
-            <div class="form-wrapper"><a href="sign-in.html">Sign In</a><a href="sign-up.html"
-                    class="small-margin">Sign Up</a></div>
+    <div class = "unlogged-body-wrapper">
+        
+    <div class="top-section">
+        <div class ="home-navigation">
+            <span class = "nav-brand"><a>Politico</a></span>
+            <span class = "nav-links"><a href="sign-in.html" class="link section-link"><span><i class="fas fa-sign-in-alt small-margin-right"></i></span>Sign in</a><a href = "sign-up.html" class="link section-link"><span><i class="fas fa-user-plus small-margin-right"></i></span>Sign up</a></span>
         </div>
-
+        <div class = "about-section small-padding">
+            <div><span class = "partial-underline">About politico</span></div>
+            <div><p>Politico is a place where the people exercise their right to vote.</p></div>
+            <div>
+                <p class="secondary-font"></p>
+            </div>
+        </div>
+    </div>
+    <div class = "form-wrapper small-padding text-center">
+        <h3 class = "">
+            Every <span class = "emphasized">Election</span> is determined by the people who <span class = "emphasized">show</span> up
+        </h3>
+    </div>
+    <div class = "form-wrapper">
+        <h4 class = "partial-underline">
+            How it works
+        </h4>
+    </div>
+    <div class = "row how-it-works">
+        <div class="col-4 text-center">
+            <div>
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-square fa-stack-2x primary-color"></i>
+                    <i class="far fa-registered fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3 class="">Register</h3>
+                <p>Creating an account is as easy as ever. Click on the <a href="sign-up.html">sign up</a> link to get started</p>
+            </div>
+        
+        </div>
+        <div class="col-4 text-center">
+            <div>
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-square fa-stack-2x primary-color"></i>
+                    <i class="fas fa-sign-in-alt fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3 class="">Log In</h3>
+                <p><a href="sign-in.html">Sign in</a> to your account to view the political offices</p>
+            </div>
+        
+        </div>
+        <div class="col-4 medium-padding text-center">
+            <div>
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-square fa-stack-2x primary-color"></i>
+                    <i class="fas fa-vote-yea fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3 class="">Vote</h3>
+            </div>
+            <p>Put the power in your own hands. Vote right!</p>
+        </div>
     </div>
     <div class = "push"></div>
     </div>

@@ -1,19 +1,30 @@
 .top-section{
-    height: 300px;
-    background-image: linear-gradient(180deg, #2196f3, #6ec6ff);
-    color: var(--text-on-primary-background-color);
+    height: 400px;
+    padding: 20px;
+    background-image: url('../assets/election.jpg');
+    background-size: cover;
+    color: white;
 }
 
-.top-section a{
-    text-decoration: none;
-    color: var(--text-on-primary-background-color);
-    padding: 10px 20px;
-    margin: 5px;
-    border:1px solid;
-    border-color: var(--text-on-primary-background-color);
-    border-radius: 20px;
+.home-navigation{
+    padding: 10px;
 }
-.top-section a:hover{
-    border-color: black;
-    color: black;
+.link{
+    width: 100px;
+    margin-right: 10px;
+}
+
+.about-section{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .how-it-works{
+        
+    }
+    .how-it-works > div{
+        max-width: 300px;
+        margin: auto;
+    }
 }

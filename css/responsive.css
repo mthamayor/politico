@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Roboto');
+
 :root{
     --primary-background-color: #2196F3;
     --primary-background-light-color: #6ec6ff;
@@ -5,7 +7,8 @@
     --primary-accent-color: #E91E63;
     --primary-surface-color: #F5F5F5;
     --default-font: Arial, Helvetica, sans-serif;
-
+    --font-roboto: 'Roboto', sans-serif;
+    --font-hind: 'Hind', sans-serif;
 }
 *{
     box-sizing: border-box;
@@ -44,17 +47,32 @@
     
 
     .side-nav{
-        padding: 50px 25px;   
+        padding: 50px 25px;  
+       
         border-bottom: none;
+        -webkit-box-shadow: 2x 0 2px #888;
+        box-shadow: 2px 0 2px #888;
     }
+    
 
     .menu-close{
         display: none;
     }
-    .side-nav{
-        min-height: fit-content;
-    }
     
+    .medium-padding{
+        padding: 20px;
+    }
+    .body-wrapper{
+         display: flex;
+         flex-flow: column;
+         height: 100%; 
+    }
+    .row{
+        flex: 2;
+    }
+    .main-content{
+        overflow: auto;
+    }
 
     
 }

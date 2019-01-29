@@ -48,26 +48,23 @@ class Dialog {
 }
 /* side nav when logged in */
 const sideNavContent = `
-        <div view-heirachy="user">
-                <a class="side-nav-item" href = "profile.html">Profile</a>
+            <div view-heirachy="user">
+                <a class="side-nav-item partial-underline" href = "profile.html">Profile</a>
             </div>
             <div view-heirachy="admin">
-                <a class="side-nav-item" href = "manage-parties.html">Manage Parties</a>
+                <a class="side-nav-item partial-underline" href = "manage-parties.html">Manage Parties</a>
             </div>
             <div view-heirachy="user">
-                <a class="side-nav-item" href = "view-political-parties.html">View Parties and Offices</a>
+                <a class="side-nav-item partial-underline" href = "view-political-parties.html">View Parties and Offices</a>
             </div>
             <div view-heirachy="user">
-                <a class="side-nav-item" href = "create-petition.html">Create Petition</a>
+                <a class="side-nav-item partial-underline" href = "create-petition.html">Create Petition</a>
             </div>
             <div view-heirachy="user">
-                <a class="side-nav-item" href = "vote.html">Vote</a>
+                <a class="side-nav-item partial-underline" href = "vote.html">Vote</a>
             </div>
-            <!-- <div view-heirachy="politician" class="side-nav-item">
-                Create Petition
-            </div> -->
             <div view-heirachy="user">
-                <a class="side-nav-item" href ="run-for-office.html">Run for office</a>
+                <a class="side-nav-item partial-underline" href ="run-for-office.html">Run for office</a>
             </div>
 `;
 
@@ -75,12 +72,11 @@ const sideNavContent = `
 const unloggedNavBarContent = `
     <div class="navbar">
         <ul>
-            <li><a class="nav-brand">POLITICO</a></li>
+            <li><a href = "index.html" class="nav-brand">POLITICO</a></li>
             <span class="nav-links">
-                <li><a href="sign-in.html">Sign In</a></li>
-                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="sign-in.html"><span><i class="fas fa-sign-in-alt small-margin-right"></i></span>Sign In</a></li>
+                <li><span></span><a href="sign-up.html"><span><i class="fas fa-user-plus small-margin-right"></i></span>Sign Up</a></li>
             </span>
-
         </ul>
     </div>
         
@@ -89,7 +85,7 @@ const unloggedNavBarContent = `
 const loggedNavBarContent = `
     <div class="navbar">
         <ul>
-            <li><a class="nav-brand">POLITICO</a></li>
+            <li><a href="index.html" class="nav-brand">POLITICO</a></li>
             <span class="nav-links">
                 <li><a href="#">Sign Out</a></li>
             </span>
