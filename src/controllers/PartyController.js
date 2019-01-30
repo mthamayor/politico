@@ -1,30 +1,30 @@
-import { Parties } from '../models/parties';
+import parties from '../models/parties';
 
-class Party {
+class PartyController {
   static createParty(req, res) {
     const newParty = {};
-    if (Parties.length === 0) {
+    if (parties.length === 0) {
       newParty.id = 0;
     } else {
-      newParty.id = Parties[Parties.length - 1].id + 1;
+      newParty.id = parties[parties.length - 1].id + 1;
     }
     newParty.name = req.body.name;
     newParty.hqAddress = req.body.hqAddress;
     newParty.logoUrl = req.body.logoUrl;
 
-    Parties.push(newParty);
+    parties.push(newParty);
 
 
     return res.status(201).send({
       status: 201,
-      Parties,
+      parties,
     });
   }
 
   // This returns all the parties
   static getParties() {
-    return Parties;
+    return parties;
   }
 }
 
-export default Party;
+export default PartyController;

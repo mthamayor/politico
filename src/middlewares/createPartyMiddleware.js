@@ -1,4 +1,4 @@
-import Party from '../controllers/party-controller';
+import Party from '../controllers/PartyController';
 
 const createPartyMiddleWare = (req, res, next) => {
   if (!req.body.name) {

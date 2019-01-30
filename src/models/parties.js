@@ -1,4 +1,4 @@
 // Create my dummy parties
-export const Parties = [];
+const parties = [];
 
-export default Parties;
+export default parties;

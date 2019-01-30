@@ -1,6 +1,6 @@
 import express from 'express';
-import Party from '../controllers/party-controller';
-import createPartyMiddleWare from '../middlewares/create-party-middleware';
+import Party from '../controllers/PartyController';
+import createPartyMiddleWare from '../middlewares/createPartyMiddleware';
 
 const partyRouter = express.Router();
 
