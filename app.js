@@ -1,6 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import router from './routes/index';
+import partyRouter from './src/routes/party-route';
 
 // Initialize express
 const app = express();
@@ -10,8 +10,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// Module used to route the files
-app.use(router);
+// Module used to route the files relating to parties;
+app.use('/api/v1/parties', partyRouter);
 
 
 const PORT = 5000;
