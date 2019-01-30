@@ -4,7 +4,7 @@ import index from './src/routes/index';
 // Initialize express
 const app = express();
 
-// Module used handle routes;
+// index module used handle routes;
 app.use(index);
 
 

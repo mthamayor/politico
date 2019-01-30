@@ -10,6 +10,7 @@ index.use(bodyParser.urlencoded({
   extended: false,
 }));
 
+// Route party related API
 index.use('/api/v1/parties', partyRouter);
 
 export default index;
