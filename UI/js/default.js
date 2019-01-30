@@ -46,33 +46,6 @@ class Dialog {
     return this.dialog;
   }
 }
-/* side nav when logged in */
-const sideNavContent = `
-            <div view-heirachy="user">
-                <a class="side-nav-item partial-underline" href = "profile.html">Profile</a>
-            </div>
-            <div view-heirachy="admin">
-                <a class="side-nav-item partial-underline" href = "manage-parties.html">Manage Parties</a>
-            </div>
-            <div view-heirachy="user">
-                <a class="side-nav-item partial-underline" href = "view-political-parties.html">View Parties and Offices</a>
-            </div>
-            <div view-heirachy="user">
-                <a class="side-nav-item partial-underline" href = "create-petition.html">Create Petition</a>
-            </div>
-            <div view-heirachy="user">
-                <a class="side-nav-item partial-underline" href = "vote.html">Vote</a>
-            </div>
-            <div view-heirachy="user">
-                <a class="side-nav-item partial-underline" href ="run-for-office.html">Run for office</a>
-            </div>
-            <div view-heirachy="user">
-                <a class="side-nav-item partial-underline" href = "politician-application.html">Politcian Application</a>
-            </div>
-            <div view-heirachy="admin">
-                <a class="side-nav-item partial-underline" href = "pending-applications.html">Pending Applications</a>
-            </div>
-`;
 
 // unlogged nav content
 const unloggedNavBarContent = `
@@ -99,17 +72,6 @@ const loggedNavBarContent = `
         </ul>
     </div>
 `;
-
-//
-
-// add the navbar to the .side-nav elements
-try {
-  const sideNav = document.querySelector('.side-nav');
-  sideNav.innerHTML = sideNavContent;
-} catch (error) {
-  console.log('no .side-nav found');
-  console.log(error);
-}
 
 // add the logged in navbar to the navbar-logged elements
 try {
