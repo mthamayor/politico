@@ -42,6 +42,43 @@ describe('Test for all endponts', () => {
       expect(data.parties.length).toBe(1);
     });
   });
+  // When all existing party are sent
+  describe(' testing the endpoint POST/api/v1/parties', () => {
+    // Container for the returned data
+    const data = {};
+    beforeAll((done) => {
+      // Create a mock request
+      const createRequest = {
+        headers: { 'content-type': 'application/x-www-form-urlencoded' },
+        url: 'http://localhost:5000/api/v1/parties',
+        form: {
+          name: 'PDP',
+          hqAddress: 'Ganmo',
+          logoUrl: 'the logo url',
+        },
+      };
+      Request.post(createRequest, (error, response, body) => {
+        if (error) {
+          console.log(error);
+        }
+        data.statusCode = response.statusCode;
+        // Parse the response body from string to JSON
+        const parsedResponse = JSON.parse(body);
+        // Extract the response body properties into data
+        data.error = parsedResponse.error;
+        done();
+      });
+    });
+    // Test the inputs
+
+    it('status should be 409', () => {
+      expect(data.statusCode).toBe(409);
+    });
+
+    it('error message should be "party already exists"', () => {
+      expect(data.error).toBe('party already exists');
+    });
+  });
 
   // When name is not set
   describe(' testing when the name is not set', () => {

@@ -21,6 +21,7 @@ class Party {
     });
   }
 
+  // This returns all the parties
   static getParties() {
     return Parties;
   }
