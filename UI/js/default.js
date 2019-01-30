@@ -66,6 +66,12 @@ const sideNavContent = `
             <div view-heirachy="user">
                 <a class="side-nav-item partial-underline" href ="run-for-office.html">Run for office</a>
             </div>
+            <div view-heirachy="user">
+                <a class="side-nav-item partial-underline" href = "politician-application.html">Politcian Application</a>
+            </div>
+            <div view-heirachy="admin">
+                <a class="side-nav-item partial-underline" href = "pending-applications.html">Pending Applications</a>
+            </div>
 `;
 
 // unlogged nav content
@@ -85,7 +91,7 @@ const unloggedNavBarContent = `
 const loggedNavBarContent = `
     <div class="navbar">
         <ul>
-            <li><a href="index.html" class="nav-brand">POLITICO</a></li>
+            <li><a href="../index.html" class="nav-brand">POLITICO</a></li>
             <span class="nav-links">
                 <li><a href="#">Sign Out</a></li>
             </span>

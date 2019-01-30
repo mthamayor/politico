@@ -427,3 +427,44 @@ textarea{
     font-size: 24px;
     color: white;
 }
+
+/* MY SPINNER */
+.custom-spinner-container{
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.custom-spinner {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+
+
+  
+}
+.custom-spinner:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: var(--primary-background-color) transparent var(--primary-background-color) transparent;
+  animation: split-ring 1.2s linear infinite;
+}
+@keyframes split-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
