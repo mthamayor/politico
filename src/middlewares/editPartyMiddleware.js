@@ -2,7 +2,9 @@ import PartyController from '../controllers/PartyController';
 import helpers from '../helpers/helpers';
 
 const editPartyMiddleWare = (req, res, next) => {
-  const { id } = req.params;
+  const {
+    id,
+  } = req.params;
   if (!req.body.name) {
     return res.status(400).send({
       status: 400,
