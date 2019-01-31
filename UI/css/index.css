@@ -1,0 +1,19 @@
+.top-section{
+    height: 300px;
+    background-image: linear-gradient(180deg, #2196f3, #6ec6ff);
+    color: var(--text-on-primary-background-color);
+}
+
+.top-section a{
+    text-decoration: none;
+    color: var(--text-on-primary-background-color);
+    padding: 10px 20px;
+    margin: 5px;
+    border:1px solid;
+    border-color: var(--text-on-primary-background-color);
+    border-radius: 20px;
+}
+.top-section a:hover{
+    border-color: black;
+    color: black;
+}
