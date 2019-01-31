@@ -1,6 +1,6 @@
 import Party from '../controllers/PartyController';
 
-const createPartyMiddleWare = (req, res, next) => {
+const createPartyMiddleware = (req, res, next) => {
   if (!req.body.name) {
     return res.status(400).send({
       status: 400,
@@ -33,4 +33,4 @@ const createPartyMiddleWare = (req, res, next) => {
 
   return next();
 };
-export default createPartyMiddleWare;
+export default createPartyMiddleware;
