@@ -1,16 +1,12 @@
+/* eslint-disable no-console */
 import express from 'express';
-import bodyParser from 'body-parser';
-import router from './routes/index';
-
+import index from './src/routes/index';
 // Initialize express
 const app = express();
 
-// Configure the middleware to accept both JSON and URL encoded data
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+// index module used handle routes;
+app.use(index);
 
-// Module used to route the files
-app.use(router);
 
 const PORT = 5000;
 app.listen(PORT, () => {
