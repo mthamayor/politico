@@ -1,5 +1,4 @@
 import parties from '../models/parties';
-import helpers from '../helpers/helpers';
 
 class PartyController {
   static createParty(req, res) {
@@ -25,22 +24,6 @@ class PartyController {
   // This returns all the parties
   static getParties() {
     return parties;
-  }
-
-  static editPoliticalParty(req, res) {
-    const id = helpers.toInteger(req.params.id);
-    const { name } = req.body;
-
-    for (let i = 0; i < parties.length; i += 1) {
-      if (parties[i].id === id) {
-        parties[i].name = name;
-        break;
-      }
-    }
-    return res.status(200).send({
-      status: 200,
-      data: [{ id, name }],
-    });
   }
 }
 
